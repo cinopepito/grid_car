@@ -1,0 +1,43 @@
+.wrapper {
+  background-attachment: fixed;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "yel yel pur"
+    "red green pur"
+    "red vio vio";
+}
+div:nth-child(1) {
+  background: yellow;
+  grid-area: yel;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+  background: url(images/img/p1.jpg) center/cover;
+}
+div:nth-child(2) {
+  background: red;
+  grid-area: red;
+  background: url(images/img/p2.jpg) center/cover;
+}
+div:nth-child(3) {
+  background: purple;
+  grid-area: pur;
+  background: url(images/img/p3.jpg) center/cover;
+}
+div:nth-child(4) {
+  background: green;
+  background: url(images/img/p4.jpg) center/cover;
+}
+div:nth-child(5) {
+  background: orchid;
+  grid-area: vio;
+  background: url(images/img/p5.jpg) center/cover;
+}
+footer{
+  text-align: center;
+  margin-top: 10px;
+  background: #C7D9E3;
+  padding: 10px;
+}
